@@ -1,0 +1,89 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`should match snapshots > cancel clean 1`] = `
+[
+  [
+    "D",
+    "temp/symlinks/a",
+  ],
+  [
+    "D",
+    "temp/symlinks/b",
+  ],
+  [
+    "ℹ",
+    "Canceled.",
+  ],
+]
+`;
+
+exports[`should match snapshots > cancel create 1`] = `
+[
+  [
+    "M",
+    "test/a -> __fixtures__/a",
+  ],
+  [
+    "M",
+    "test/b -> __fixtures__/b",
+  ],
+  [
+    "ℹ",
+    "Canceled.",
+  ],
+]
+`;
+
+exports[`should match snapshots > clean 1`] = `
+[
+  [
+    "✔",
+    "temp/symlinks/a",
+  ],
+  [
+    "✔",
+    "temp/symlinks/b",
+  ],
+]
+`;
+
+exports[`should match snapshots > create 1`] = `
+[
+  [
+    "M",
+    "temp/symlinks/a -> ../../test/__fixtures__/a",
+  ],
+  [
+    "M",
+    "temp/symlinks/b -> ../../test/__fixtures__/b",
+  ],
+  [
+    "✔",
+    "temp/symlinks/a -> ../../test/__fixtures__/a",
+  ],
+  [
+    "✔",
+    "temp/symlinks/b -> ../../test/__fixtures__/b",
+  ],
+]
+`;
+
+exports[`should match snapshots > no match 1`] = `
+[
+  [
+    "ℹ",
+    "No matching files found.",
+  ],
+]
+`;
+
+exports[`should match snapshots > skip exists 1`] = `
+[
+  [
+    "skip temp/symlinks/a -> ../../test/__fixtures__/a",
+  ],
+  [
+    "skip temp/symlinks/b -> ../../test/__fixtures__/b",
+  ],
+]
+`;
