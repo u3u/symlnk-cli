@@ -1,6 +1,11 @@
+import fs from 'node:fs/promises'
 import path from 'node:path'
+import { options } from 'kolorist'
 import { expect, it, vi } from 'vitest'
-import { createSymlinks, type CreateSymlinksOptions } from '../src/create-symlinks'
+import { createSymlinks, type CreateSymlinksOptions } from '../src'
+
+// Disable color, otherwise the snapshot will not match.
+options.enabled = false
 
 const cwd = 'test/__fixtures__'
 const dest = 'temp/symlinks'
@@ -16,7 +21,7 @@ it('should match snapshots', async () => {
 
     spy.mockClear()
     await createSymlinks(files, others)
-    expect(spy.mock.calls.sort()).toMatchSnapshot(message)
+    expect(spy.mock.calls.sort().map((item) => item.join(' '))).toMatchSnapshot(message)
   }
 
   await createSymlinksToMatchSnapshot('*.nginx', {
@@ -69,4 +74,15 @@ it('should match snapshots', async () => {
     dest: '/etc/nginx/sites-enabled',
     dry: true,
   })
+})
+
+it('should created symlinks', async () => {
+  const { globby } = await import('globby')
+  const paths = await globby('*', { absolute: true, cwd: dest })
+
+  for (const item of paths) {
+    const link = await fs.readlink(item)
+
+    expect(link).toBeTypeOf('string')
+  }
 })
