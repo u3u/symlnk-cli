@@ -1,4 +1,4 @@
-lockfileVersion: '6.1'
+lockfileVersion: '6.0'
 
 settings:
   autoInstallPeers: true
@@ -52,7 +52,7 @@ devDependencies:
   simple-git-hooks:
     specifier: ^2.8.1
     version: 2.8.1
-  symlnk:
+  symlnk-cli:
     specifier: 'link:'
     version: 'link:'
   tsup:

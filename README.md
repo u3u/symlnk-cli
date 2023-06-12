@@ -1,13 +1,13 @@
-# `symlnk`
+# `symlnk-cli`
 
 > A CLI program for batch creating symbolic links.
 
-[![npm version](https://badgen.net/npm/v/symlnk)](https://npm.im/symlnk) [![npm downloads](https://badgen.net/npm/dm/symlnk)](https://npm.im/symlnk) [![codecov](https://codecov.io/gh/u3u/symlnk/branch/main/graph/badge.svg?token=JXgKbrQ6ez)](https://codecov.io/gh/u3u/symlnk)
+[![npm version](https://badgen.net/npm/v/symlnk-cli)](https://npm.im/symlnk-cli) [![npm downloads](https://badgen.net/npm/dm/symlnk-cli)](https://npm.im/symlnk-cli) [![codecov](https://codecov.io/gh/u3u/symlnk-cli/branch/main/graph/badge.svg?token=JXgKbrQ6ez)](https://codecov.io/gh/u3u/symlnk-cli)
 
 ## Install
 
 ```sh
-pnpm -g add symlnk
+pnpm -g add symlnk-cli
 ```
 
 ## Usage
@@ -19,8 +19,6 @@ lnk *.nginx --dest /etc/nginx/sites-enabled
 ## CLI Options
 
 ```
-symlnk/0.0.0
-
 Usage:
   $ symlnk [...files]
 

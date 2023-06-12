@@ -2,10 +2,10 @@
 import { cac } from 'cac'
 import { blue } from 'kolorist'
 import prompts from 'prompts'
-import { name, version } from '../package.json'
+import { version } from '../package.json'
 import { createSymlinks } from './create-symlinks'
 
-const cli = cac(name)
+const cli = cac('symlnk')
 
 cli.version(version)
 
