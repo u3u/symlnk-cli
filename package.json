@@ -1,6 +1,6 @@
 {
   "name": "symlnk",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A CLI program for batch creating symbolic links.",
   "keywords": [
     "symlink",
