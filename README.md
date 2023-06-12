@@ -4,6 +4,8 @@
 
 [![npm version](https://badgen.net/npm/v/symlnk-cli)](https://npm.im/symlnk-cli) [![npm downloads](https://badgen.net/npm/dm/symlnk-cli)](https://npm.im/symlnk-cli) [![codecov](https://codecov.io/gh/u3u/symlnk-cli/branch/main/graph/badge.svg?token=JXgKbrQ6ez)](https://codecov.io/gh/u3u/symlnk-cli)
 
+![screenshot](https://cdn.jsdelivr.net/gh/u3u/u3u@main/uPic/Xnip2023-06-13_00-55-57.png)
+
 ## Install
 
 ```sh
