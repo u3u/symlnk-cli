@@ -74,7 +74,7 @@
     "@vitest/ui": "^0.34.7",
     "eslint": "^8.57.0",
     "lint-staged": "^13.3.0",
-    "prettier": "^2.8.8",
+    "prettier": "^3.3.3",
     "simple-git-hooks": "^2.11.1",
     "symlnk-cli": "link:",
     "tsup": "^6.7.0",
