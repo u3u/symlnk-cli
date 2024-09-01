@@ -73,7 +73,7 @@
     "@vitest/coverage-v8": "^0.34.6",
     "@vitest/ui": "^0.34.7",
     "eslint": "^8.57.0",
-    "lint-staged": "^13.3.0",
+    "lint-staged": "^15.2.10",
     "prettier": "^2.8.8",
     "simple-git-hooks": "^2.11.1",
     "symlnk-cli": "link:",
